@@ -36,7 +36,7 @@ $(document).ready(function(){
             var ToDo=$(this).val().trim();
 
             //qui vado a specificare che se la parola è piu lunga di 3 lettere,vado a inserire la stringa dentro l'ul,dopodichè vado a svuotare l'input dicendogli di sovrascrivere il valore con una stringa vuota
-            if($(this).val().length>3){
+            if(ToDo.length>3){
                 $(elemento).find('.testo').append(ToDo);
                 $('.container ul').append(elemento);
                 $(this).val('');
